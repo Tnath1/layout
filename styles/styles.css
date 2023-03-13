@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+  /* padding: 0;
+  margin: 0; */
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: #f1f1f1;
+  margin: 15px;
+}
+/* styling the header */
+.header {
+  background: white;
+  padding: 30px;
+  text-align: center;
+}
+h1 {
+  font-size: 40px;
+  padding: 15px;
+}
+/* styling the navbar */
+.navbar {
+  overflow: hidden;
+  background-color: black;
+}
+.navbar a {
+  float: left;
+  text-decoration: none;
+  display: block;
+  padding: 14px 16px;
+  color: white;
+}
+a:hover {
+  background: rgb(150, 149, 149);
+}
+/* styling the body and cards */
+.box {
+  margin-top: 15px;
+  background: white;
+  padding: 15px;
+}
+hi,
+p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.fakeimg {
+  width: 100%;
+  background-color: gray;
+  height: 100px;
+  padding: 15px;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px rgb(51, 16, 16);
+}
+/* styling the aside section */
+.aside {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: white;
+  margin-left: 15px;
+  padding: 15px;
+}
+.fakeimage {
+  width: 90%;
+  height: 100px;
+  background: grey;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 5px rgb(51, 16, 16);
+}
+.footer {
+  background: rgb(163, 163, 163);
+  text-align: center;
+  padding: 15px;
+  margin-top: 15px;
+}
+/*  floating the items */
+section {
+  float: left;
+  width: 75%;
+}
+aside {
+  float: left;
+  width: 25%;
+}
+.float:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 800px) {
+  section,
+  aside {
+    width: 100%;
+    display: block;
+    float: none;
+  }
+}
